@@ -4,12 +4,13 @@ const path = require("path");
 const app = express();
 const template = require('./json/templates.json')
 
-app.use(cors())
 
 app.use(cors({
-  origin : ['https://oscar-print.vercel.app' , 'http://localhost:8000'],
-  credentials : true
+  origin: 'https://oscar-print.vercel.app',
+  methods: 'GET,POST,OPTIONS',
+  allowedHeaders: 'Content-Type,Authorization'
 }));
+
 
 const fs = require("fs");
 const multer = require("multer");
