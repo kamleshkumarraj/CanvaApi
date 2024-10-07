@@ -5,7 +5,7 @@ const app = express();
 const template = require('./json/templates.json')
 
 app.use(cors({
-  origin : 'http://localhost:5173',
+  origin : ['http://localhost:5173' , 'https://oscar-print.vercel.app/'],
   credentials : true
 }));
 
