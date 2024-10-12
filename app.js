@@ -6,7 +6,7 @@ const template = require('./json/templates.json')
 
 
 app.use(cors({
-  origin: 'https://oscar-print.vercel.app',
+  origin: ['https://oscar-print.vercel.app' , 'http://localhost:5173'],
   methods: 'GET,POST,OPTIONS',
   allowedHeaders: 'Content-Type,Authorization'
 }));
